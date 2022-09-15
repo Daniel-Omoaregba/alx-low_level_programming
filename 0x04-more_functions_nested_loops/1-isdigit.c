@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _isupper - check for upppercase character
- * @c: the parameter
- * Return: 0 and 1
+ *  _isdigit - to check digit of 0 to 9
+ *  @c: int
+ *
+ *  Return: Always 0
  */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
@@ -15,5 +16,5 @@ int _isdigit(int c);
 	{
 		return (0);
 	}
-	_putchar('\n');
+	_purchase("\n");
 }
