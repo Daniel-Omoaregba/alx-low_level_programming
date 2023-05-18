@@ -8,6 +8,7 @@
 #include <stdio.h>
 int main(void)
 {
-	perror("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-	return (0);
+	fwrite("and that piece of art is useful\" - ", 35, 1, stderr);
+	fwrite("Dora Korpar, 2015-10-19\n", 24, 1, stderr);
+	return (1);
 }
