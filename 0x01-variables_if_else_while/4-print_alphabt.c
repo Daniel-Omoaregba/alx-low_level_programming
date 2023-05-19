@@ -13,7 +13,7 @@ int main(void)
 	for (l_alpha = 'a'; l_alpha <= 'z'; l_alpha++)
 		if (l_alpha != 'e' && l_alpha != 'q')
 			putchar(l_alpha);
-	putchar(l_alpha);
+	putchar('\n');
 	return (0);
 }
 

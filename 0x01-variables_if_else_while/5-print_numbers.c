@@ -12,5 +12,6 @@ int main(void)
 
 	for (b_ten = 0; b_ten <= 9; b_ten++)
 		printf("%d", b_ten);
+	putchar('\n');
 	return (0);
 }
