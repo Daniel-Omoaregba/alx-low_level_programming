@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * _abs - absolute value of an interger
- * @int: take the input
+ * @x: take the input
+ *
  * Return: absolute number
  */
 int _abs(int x)
