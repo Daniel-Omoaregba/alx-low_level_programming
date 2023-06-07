@@ -14,21 +14,22 @@ char *_strcat(char *dest, char *src)
 	n = 0;
 	while (*(dest + i) != '\0')
 	{
-		n += 1;
+		n++;
 		i++;
 	}
-	for (j = 0; j >= 0; j++)
+	j = 0;
+	while (1)
 	{
 		if (*(src + j) != '\0')
 		{
-			*(dest + n + i) = *(src + i);
+			*(dest + (n + j)) = *(src + j);
+			j++;
 		}
 		else
 		{
-			*(dest + n + i) = '\0';
+			*(dest + (n + j)) = '\0';
 			break;
 		}
 	}
-	printf("this %s", dest);
-	return dest;
+	return (dest);
 }
