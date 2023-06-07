@@ -5,23 +5,27 @@
  */
 void rev_string(char *s)
 {
-	int i, n;
+	int i, j, n, m;
 
 	n = 0;
-	for (i = 0; i >= 0; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (s[i] != '\0')
+		printf("%d  %c\n", i, *(s + i));
+		n++;
+	}
+	printf("%d\n", n);
+
+	for (j = 0, m = n - ; j <= n; j++)
+	{
+		if (j < n)
 		{
-			n = n + 1;
+			*(s + j) = *(s + m);
+			printf("%c\n", *(s + j));
+			m--;
 		}
 		else
 		{
-			break;
+			*(s + j) = '\0';
 		}
 	}
-	for (i = n; i >= 0; i--)
-	{
-		printf("%c", s[i]);
-	}
-	putchar('\n');
 }
