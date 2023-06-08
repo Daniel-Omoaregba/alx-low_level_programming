@@ -22,5 +22,5 @@ int _strcmp(char *s1, char *s2)
 	{
 		cmp = 0;
 	}
-	return cmp;
+	return (cmp);
 }
