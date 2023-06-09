@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	long int sum;
+	int i;
 
 	sum = 0;
 	if (argc == 1)
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", sum);
+		printf("%ld\n", sum);
 	}
 	return (0);
 }
