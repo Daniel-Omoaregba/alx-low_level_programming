@@ -7,18 +7,30 @@
  *
  * Return: 0 or 1
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum;
 
 	sum = 0;
-	for (i = 1; i < argc; i++)
+	if (argc == 1)
 	{
-		if (atoi(arg[i]) > 0)
-		{
-			sum += atoi(arg[i]);
-		}
+		printf("0\n");
 	}
-	printf("%d\n", sum);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			if (atoi(argv[i]) > 0)
+			{
+				sum += atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		printf("%d\n", sum);
+	}
 	return (0);
 }
