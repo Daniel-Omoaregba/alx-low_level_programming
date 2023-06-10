@@ -9,11 +9,22 @@
  */
 int main(int argc, char *argv[])
 {
-	int num_coin, i, n;
+	int num_coin, n;
 
 	num_coin = 0;
 	n = atoi(argv[1]);
-	for (i = 0; i < n; 1++)
+	if (argc == 1)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else if (n < 0)
+	{
+		printf("0\n");
+	}
+	else
+	{
+	while (1)
 	{
 		if (n >= 25)
 		{
@@ -72,6 +83,13 @@ int main(int argc, char *argv[])
 				n = n % 5;
 			}
 		}
+		else
+		{
+			num_coin += n;
+			printf("%d\n", num_coin);
+			break;
+		}
+	}
 	}
 	return (0);
 }	
