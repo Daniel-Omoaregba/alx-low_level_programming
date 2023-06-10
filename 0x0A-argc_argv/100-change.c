@@ -18,18 +18,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (n < 0)
-	{
-		printf("0\n");
-	}
 	else
 	{
-	while (1)
-	{
-		if (n >= 25)
+		if (n > 0)
 		{
-			if (n % 25 == 0)
+			while (1)
 			{
+				if (n >= 25)
+				{
+					if (n % 25 == 0)
+					{
 
 				num_coin += n / 25;
 				printf("%d\n", num_coin);
