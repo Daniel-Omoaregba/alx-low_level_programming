@@ -5,4 +5,8 @@
  *
  * Returns: 
  */
+char *leet(char *)
+{
+	int i;
+
 
