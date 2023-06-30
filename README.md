@@ -1,1 +1,1 @@
-This project focus on the c programming language
+This project focus on the c programming language.
