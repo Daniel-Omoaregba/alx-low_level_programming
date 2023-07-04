@@ -3,7 +3,7 @@
 /**
  * _sqrt_recursion - the natural square root of a number
  * @n: int
- *
+ * @bn: base number
  * Return: the natural square root of a number
  */
 int calculator(int n, int bn);
