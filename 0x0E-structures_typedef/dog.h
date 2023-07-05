@@ -1,11 +1,9 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef DOG_H
+#define DOG_H
 #include <stddef.h>
 #include <string.h>
 /**
  * struct dog - dog's structure
- *
- * @name: the name of the dog
  * @name: name of dog
  * @age: dog's age
  * @owner: dog's owner
