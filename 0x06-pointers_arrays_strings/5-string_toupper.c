@@ -15,7 +15,7 @@ char *string_toupper(char *n)
 		{
 			*(n + i) = *(n + i) - 32;
 		}
-		if (*(n + i) > 'A' && *(n + i) < 'Z') 
+		if (*(n + i) > 'A' && *(n + i) < 'Z')
 		{
 			*(n + i) = *(n + i);
 		}
