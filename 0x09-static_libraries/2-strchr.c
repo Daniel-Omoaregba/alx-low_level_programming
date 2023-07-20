@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int main(void)
+char *_strchr(char *s, char c);
 {
     return (0);
 }

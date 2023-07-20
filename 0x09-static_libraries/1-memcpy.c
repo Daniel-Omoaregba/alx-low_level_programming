@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int main(void)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-    return (0);
+    return (dest);
 }

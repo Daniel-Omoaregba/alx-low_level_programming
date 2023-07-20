@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-int main(void)
-{
+char *_strpbrk(char *s, char *accept);
     return (0);
 }
