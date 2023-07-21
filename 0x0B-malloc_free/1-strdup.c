@@ -12,12 +12,14 @@ char *_strdup(char *str)
 {
 	unsigned int i;
 	char *spr;
+	int len;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	spr = malloc(sizeof(*spr) * strlen(str));
+	len = strlen(str);
+	spr = malloc(sizeof(char) * len);
 	for (i = 0; i < strlen(str); i++)
 	{
 		spr[i] = str[i];
