@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * strdup - returns a pointer to a newly allocated space in memory
- * @str: 
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
  *
  * Return: Null or returns a pointer to a new string
  */
@@ -14,16 +14,13 @@ char *_strdup(char *str)
 	char *spr;
 	int len;
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	len = strlen(str);
 	spr = malloc(sizeof(char) * len);
+	if (str == NULL || spr == NULL)
+		return (NULL);
 	for (i = 0; i < strlen(str); i++)
 	{
 		spr[i] = str[i];
 	}
-	free(spr);
 	return (spr);
 }
